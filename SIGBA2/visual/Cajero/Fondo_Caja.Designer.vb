@@ -35,6 +35,7 @@ Partial Class Fondo_Caja
         Me.textBoxContraseña.Name = "textBoxContraseña"
         Me.textBoxContraseña.Size = New System.Drawing.Size(100, 20)
         Me.textBoxContraseña.TabIndex = 7
+        Me.textBoxContraseña.UseSystemPasswordChar = True
         '
         'textBoxFondo
         '

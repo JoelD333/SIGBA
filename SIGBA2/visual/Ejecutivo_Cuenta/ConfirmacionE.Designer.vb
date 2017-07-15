@@ -42,6 +42,7 @@ Partial Class ConfirmacionE
         Me.TextBoxContraseña.Name = "TextBoxContraseña"
         Me.TextBoxContraseña.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxContraseña.TabIndex = 9
+        Me.TextBoxContraseña.UseSystemPasswordChar = True
         '
         'LabelContraseña
         '
@@ -61,6 +62,7 @@ Partial Class ConfirmacionE
         Me.Controls.Add(Me.TextBoxContraseña)
         Me.Controls.Add(Me.LabelContraseña)
         Me.Name = "ConfirmacionE"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ConfirmacionE"
         Me.ResumeLayout(False)
         Me.PerformLayout()

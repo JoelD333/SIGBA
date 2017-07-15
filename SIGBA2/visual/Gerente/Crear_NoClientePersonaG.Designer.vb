@@ -22,7 +22,6 @@ Partial Class Crear_NoClientePersonaG
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.textBoxFechaNac = New System.Windows.Forms.TextBox()
         Me.comboBoxIdentificacion = New System.Windows.Forms.ComboBox()
         Me.buttonAceptar = New System.Windows.Forms.Button()
         Me.textBoxDomicilio = New System.Windows.Forms.TextBox()
@@ -43,21 +42,15 @@ Partial Class Crear_NoClientePersonaG
         Me.labelApellidoPrimero = New System.Windows.Forms.Label()
         Me.labelNombreSegundo = New System.Windows.Forms.Label()
         Me.labelNombrePrimero = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
-        '
-        'textBoxFechaNac
-        '
-        Me.textBoxFechaNac.Location = New System.Drawing.Point(133, 286)
-        Me.textBoxFechaNac.Name = "textBoxFechaNac"
-        Me.textBoxFechaNac.Size = New System.Drawing.Size(100, 20)
-        Me.textBoxFechaNac.TabIndex = 66
         '
         'comboBoxIdentificacion
         '
         Me.comboBoxIdentificacion.FormattingEnabled = True
         Me.comboBoxIdentificacion.Location = New System.Drawing.Point(91, 125)
         Me.comboBoxIdentificacion.Name = "comboBoxIdentificacion"
-        Me.comboBoxIdentificacion.Size = New System.Drawing.Size(82, 21)
+        Me.comboBoxIdentificacion.Size = New System.Drawing.Size(92, 21)
         Me.comboBoxIdentificacion.TabIndex = 65
         '
         'buttonAceptar
@@ -73,12 +66,12 @@ Partial Class Crear_NoClientePersonaG
         '
         Me.textBoxDomicilio.Location = New System.Drawing.Point(133, 260)
         Me.textBoxDomicilio.Name = "textBoxDomicilio"
-        Me.textBoxDomicilio.Size = New System.Drawing.Size(100, 20)
+        Me.textBoxDomicilio.Size = New System.Drawing.Size(148, 20)
         Me.textBoxDomicilio.TabIndex = 63
         '
         'buttonMenos
         '
-        Me.buttonMenos.Location = New System.Drawing.Point(210, 172)
+        Me.buttonMenos.Location = New System.Drawing.Point(258, 172)
         Me.buttonMenos.Name = "buttonMenos"
         Me.buttonMenos.Size = New System.Drawing.Size(23, 23)
         Me.buttonMenos.TabIndex = 62
@@ -87,7 +80,7 @@ Partial Class Crear_NoClientePersonaG
         '
         'buttonMas
         '
-        Me.buttonMas.Location = New System.Drawing.Point(186, 172)
+        Me.buttonMas.Location = New System.Drawing.Point(234, 172)
         Me.buttonMas.Name = "buttonMas"
         Me.buttonMas.Size = New System.Drawing.Size(23, 23)
         Me.buttonMas.TabIndex = 61
@@ -98,12 +91,12 @@ Partial Class Crear_NoClientePersonaG
         '
         Me.textBoxTelefono.Location = New System.Drawing.Point(80, 172)
         Me.textBoxTelefono.Name = "textBoxTelefono"
-        Me.textBoxTelefono.Size = New System.Drawing.Size(100, 20)
+        Me.textBoxTelefono.Size = New System.Drawing.Size(148, 20)
         Me.textBoxTelefono.TabIndex = 60
         '
         'textBoxIdentificaion
         '
-        Me.textBoxIdentificaion.Location = New System.Drawing.Point(181, 125)
+        Me.textBoxIdentificaion.Location = New System.Drawing.Point(189, 126)
         Me.textBoxIdentificaion.Name = "textBoxIdentificaion"
         Me.textBoxIdentificaion.Size = New System.Drawing.Size(100, 20)
         Me.textBoxIdentificaion.TabIndex = 59
@@ -141,7 +134,7 @@ Partial Class Crear_NoClientePersonaG
         Me.listBoxTelefonos.FormattingEnabled = True
         Me.listBoxTelefonos.Location = New System.Drawing.Point(80, 198)
         Me.listBoxTelefonos.Name = "listBoxTelefonos"
-        Me.listBoxTelefonos.Size = New System.Drawing.Size(153, 56)
+        Me.listBoxTelefonos.Size = New System.Drawing.Size(201, 56)
         Me.listBoxTelefonos.TabIndex = 54
         '
         'labelFechaNac
@@ -216,12 +209,19 @@ Partial Class Crear_NoClientePersonaG
         Me.labelNombrePrimero.TabIndex = 46
         Me.labelNombrePrimero.Text = "Primer Nombre"
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(133, 286)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(148, 20)
+        Me.DateTimePicker1.TabIndex = 66
+        '
         'Crear_NoClientePersonaG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(301, 392)
-        Me.Controls.Add(Me.textBoxFechaNac)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.comboBoxIdentificacion)
         Me.Controls.Add(Me.buttonAceptar)
         Me.Controls.Add(Me.textBoxDomicilio)
@@ -248,8 +248,6 @@ Partial Class Crear_NoClientePersonaG
         Me.PerformLayout()
 
     End Sub
-
-    Private WithEvents textBoxFechaNac As TextBox
     Private WithEvents comboBoxIdentificacion As ComboBox
     Private WithEvents buttonAceptar As Button
     Private WithEvents textBoxDomicilio As TextBox
@@ -270,4 +268,5 @@ Partial Class Crear_NoClientePersonaG
     Private WithEvents labelApellidoPrimero As Label
     Private WithEvents labelNombreSegundo As Label
     Private WithEvents labelNombrePrimero As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class

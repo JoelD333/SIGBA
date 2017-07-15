@@ -133,6 +133,7 @@ Partial Class Estado_CuentaG
         Me.Controls.Add(Me.comboBoxIdentificacion)
         Me.Controls.Add(Me.labelIdentificacion)
         Me.Name = "Estado_CuentaG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Estado_CuentaG"
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -31,7 +31,6 @@ Partial Class Crear_NoClienteEmpresaG
         Me.textBoxTelefono = New System.Windows.Forms.TextBox()
         Me.textBoxFax = New System.Windows.Forms.TextBox()
         Me.textBoxDomicilio = New System.Windows.Forms.TextBox()
-        Me.textBoxFecha = New System.Windows.Forms.TextBox()
         Me.textBoxNombreComercial = New System.Windows.Forms.TextBox()
         Me.textBoxNombreReal = New System.Windows.Forms.TextBox()
         Me.listBoxTelefonos = New System.Windows.Forms.ListBox()
@@ -44,6 +43,7 @@ Partial Class Crear_NoClienteEmpresaG
         Me.labelFecha = New System.Windows.Forms.Label()
         Me.labelNombreComercial = New System.Windows.Forms.Label()
         Me.labelNombreReal = New System.Windows.Forms.Label()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.SuspendLayout()
         '
         'buttonAceptar
@@ -66,6 +66,7 @@ Partial Class Crear_NoClienteEmpresaG
         'textBoxRut
         '
         Me.textBoxRut.Location = New System.Drawing.Point(124, 299)
+        Me.textBoxRut.MaxLength = 12
         Me.textBoxRut.Name = "textBoxRut"
         Me.textBoxRut.Size = New System.Drawing.Size(100, 20)
         Me.textBoxRut.TabIndex = 41
@@ -73,6 +74,7 @@ Partial Class Crear_NoClienteEmpresaG
         'textBoxCodigoPostal
         '
         Me.textBoxCodigoPostal.Location = New System.Drawing.Point(124, 246)
+        Me.textBoxCodigoPostal.MaxLength = 5
         Me.textBoxCodigoPostal.Name = "textBoxCodigoPostal"
         Me.textBoxCodigoPostal.Size = New System.Drawing.Size(100, 20)
         Me.textBoxCodigoPostal.TabIndex = 40
@@ -115,13 +117,6 @@ Partial Class Crear_NoClienteEmpresaG
         Me.textBoxDomicilio.Name = "textBoxDomicilio"
         Me.textBoxDomicilio.Size = New System.Drawing.Size(100, 20)
         Me.textBoxDomicilio.TabIndex = 35
-        '
-        'textBoxFecha
-        '
-        Me.textBoxFecha.Location = New System.Drawing.Point(135, 59)
-        Me.textBoxFecha.Name = "textBoxFecha"
-        Me.textBoxFecha.Size = New System.Drawing.Size(100, 20)
-        Me.textBoxFecha.TabIndex = 34
         '
         'textBoxNombreComercial
         '
@@ -226,11 +221,19 @@ Partial Class Crear_NoClienteEmpresaG
         Me.labelNombreReal.TabIndex = 22
         Me.labelNombreReal.Text = "Nombre o Razón social"
         '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(135, 59)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(100, 20)
+        Me.DateTimePicker1.TabIndex = 44
+        '
         'Crear_NoClienteEmpresaG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 366)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.buttonAceptar)
         Me.Controls.Add(Me.comboBoxTipoEmpresa)
         Me.Controls.Add(Me.textBoxRut)
@@ -240,7 +243,6 @@ Partial Class Crear_NoClienteEmpresaG
         Me.Controls.Add(Me.textBoxTelefono)
         Me.Controls.Add(Me.textBoxFax)
         Me.Controls.Add(Me.textBoxDomicilio)
-        Me.Controls.Add(Me.textBoxFecha)
         Me.Controls.Add(Me.textBoxNombreComercial)
         Me.Controls.Add(Me.textBoxNombreReal)
         Me.Controls.Add(Me.listBoxTelefonos)
@@ -254,6 +256,7 @@ Partial Class Crear_NoClienteEmpresaG
         Me.Controls.Add(Me.labelNombreComercial)
         Me.Controls.Add(Me.labelNombreReal)
         Me.Name = "Crear_NoClienteEmpresaG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Crear_NoClienteEmpresaG"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -269,7 +272,6 @@ Partial Class Crear_NoClienteEmpresaG
     Private WithEvents textBoxTelefono As TextBox
     Private WithEvents textBoxFax As TextBox
     Private WithEvents textBoxDomicilio As TextBox
-    Private WithEvents textBoxFecha As TextBox
     Private WithEvents textBoxNombreComercial As TextBox
     Private WithEvents textBoxNombreReal As TextBox
     Private WithEvents listBoxTelefonos As ListBox
@@ -282,4 +284,5 @@ Partial Class Crear_NoClienteEmpresaG
     Private WithEvents labelFecha As Label
     Private WithEvents labelNombreComercial As Label
     Private WithEvents labelNombreReal As Label
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class

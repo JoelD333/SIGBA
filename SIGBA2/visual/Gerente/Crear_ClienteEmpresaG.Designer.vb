@@ -25,7 +25,7 @@ Partial Class Crear_ClienteEmpresaG
         Me.buttonAceptar = New System.Windows.Forms.Button()
         Me.buttonDireccion = New System.Windows.Forms.Button()
         Me.ButtonComprobante = New System.Windows.Forms.Button()
-        Me.textBox1 = New System.Windows.Forms.TextBox()
+        Me.textBoxRut = New System.Windows.Forms.TextBox()
         Me.labelDireccion = New System.Windows.Forms.Label()
         Me.labelComprobanteIngresos = New System.Windows.Forms.Label()
         Me.labelRut = New System.Windows.Forms.Label()
@@ -58,12 +58,12 @@ Partial Class Crear_ClienteEmpresaG
         Me.ButtonComprobante.Text = "Adjuntar"
         Me.ButtonComprobante.UseVisualStyleBackColor = True
         '
-        'textBox1
+        'textBoxRut
         '
-        Me.textBox1.Location = New System.Drawing.Point(65, 65)
-        Me.textBox1.Name = "textBox1"
-        Me.textBox1.Size = New System.Drawing.Size(100, 20)
-        Me.textBox1.TabIndex = 10
+        Me.textBoxRut.Location = New System.Drawing.Point(65, 65)
+        Me.textBoxRut.Name = "textBoxRut"
+        Me.textBoxRut.Size = New System.Drawing.Size(100, 20)
+        Me.textBoxRut.TabIndex = 10
         '
         'labelDireccion
         '
@@ -100,7 +100,7 @@ Partial Class Crear_ClienteEmpresaG
         Me.Controls.Add(Me.buttonAceptar)
         Me.Controls.Add(Me.buttonDireccion)
         Me.Controls.Add(Me.ButtonComprobante)
-        Me.Controls.Add(Me.textBox1)
+        Me.Controls.Add(Me.textBoxRut)
         Me.Controls.Add(Me.labelDireccion)
         Me.Controls.Add(Me.labelComprobanteIngresos)
         Me.Controls.Add(Me.labelRut)
@@ -114,7 +114,7 @@ Partial Class Crear_ClienteEmpresaG
     Private WithEvents buttonAceptar As Button
     Private WithEvents buttonDireccion As Button
     Private WithEvents ButtonComprobante As Button
-    Private WithEvents textBox1 As TextBox
+    Private WithEvents textBoxRut As TextBox
     Private WithEvents labelDireccion As Label
     Private WithEvents labelComprobanteIngresos As Label
     Private WithEvents labelRut As Label

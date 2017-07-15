@@ -101,6 +101,7 @@ Partial Class Ver_AuditoriasEmpleadoG
         Me.Controls.Add(Me.labelNroEmpleado)
         Me.Controls.Add(Me.dataGridView1)
         Me.Name = "Ver_AuditoriasEmpleadoG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ver_AuditoriasEmpleadoG"
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

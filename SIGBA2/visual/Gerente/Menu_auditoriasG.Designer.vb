@@ -74,6 +74,7 @@ Partial Class Menu_auditoriasG
         Me.Controls.Add(Me.buttonVerAudi)
         Me.Controls.Add(Me.buttonCrearAudi)
         Me.Name = "Menu_auditoriasG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_auditoriasG"
         Me.ResumeLayout(False)
 

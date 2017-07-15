@@ -133,6 +133,7 @@ Partial Class Cuentas_ClienteG
         Me.Controls.Add(Me.comboBoxIdentificacion)
         Me.Controls.Add(Me.labelIdentificacion)
         Me.Name = "Cuentas_ClienteG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cuentas_ClienteG"
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

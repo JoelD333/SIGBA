@@ -24,7 +24,7 @@ Partial Class Cerrar_Caja
     Private Sub InitializeComponent()
         Me.LabelEsperado = New System.Windows.Forms.Label()
         Me.LabelSaldo = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBoxSaldo = New System.Windows.Forms.TextBox()
         Me.LabelSaldoEsperadoX = New System.Windows.Forms.Label()
         Me.ButtonAceptar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -47,12 +47,12 @@ Partial Class Cerrar_Caja
         Me.LabelSaldo.TabIndex = 1
         Me.LabelSaldo.Text = "Saldo en Caja:"
         '
-        'TextBox1
+        'TextBoxSaldo
         '
-        Me.TextBox1.Location = New System.Drawing.Point(113, 95)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 2
+        Me.TextBoxSaldo.Location = New System.Drawing.Point(113, 95)
+        Me.TextBoxSaldo.Name = "TextBoxSaldo"
+        Me.TextBoxSaldo.Size = New System.Drawing.Size(100, 20)
+        Me.TextBoxSaldo.TabIndex = 2
         '
         'LabelSaldoEsperadoX
         '
@@ -79,10 +79,11 @@ Partial Class Cerrar_Caja
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.ButtonAceptar)
         Me.Controls.Add(Me.LabelSaldoEsperadoX)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBoxSaldo)
         Me.Controls.Add(Me.LabelSaldo)
         Me.Controls.Add(Me.LabelEsperado)
         Me.Name = "Cerrar_Caja"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cerrar_Caja"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -91,7 +92,7 @@ Partial Class Cerrar_Caja
 
     Friend WithEvents LabelEsperado As Label
     Friend WithEvents LabelSaldo As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBoxSaldo As TextBox
     Friend WithEvents LabelSaldoEsperadoX As Label
     Friend WithEvents ButtonAceptar As Button
 End Class

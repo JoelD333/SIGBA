@@ -50,7 +50,7 @@ Partial Class Deposito
         '
         'textBoxNroCuenta
         '
-        Me.textBoxNroCuenta.Location = New System.Drawing.Point(92, 73)
+        Me.textBoxNroCuenta.Location = New System.Drawing.Point(91, 73)
         Me.textBoxNroCuenta.Name = "textBoxNroCuenta"
         Me.textBoxNroCuenta.Size = New System.Drawing.Size(100, 20)
         Me.textBoxNroCuenta.TabIndex = 15

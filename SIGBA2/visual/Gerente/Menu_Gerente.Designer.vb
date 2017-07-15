@@ -118,6 +118,7 @@ Partial Class Menu_Gerente
         Me.Controls.Add(Me.buttonAuditorias)
         Me.Controls.Add(Me.buttonNOTIFICACIONES)
         Me.Name = "Menu_Gerente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Gerente"
         Me.ResumeLayout(False)
 

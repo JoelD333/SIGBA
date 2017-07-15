@@ -81,6 +81,7 @@ Partial Class Usuarios_ActivosG
         Me.ClientSize = New System.Drawing.Size(427, 261)
         Me.Controls.Add(Me.dataGridView1)
         Me.Name = "Usuarios_ActivosG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Usuarios_ActivosG"
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

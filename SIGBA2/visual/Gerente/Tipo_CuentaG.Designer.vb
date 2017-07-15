@@ -260,6 +260,7 @@ Partial Class Tipo_CuentaG
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Name = "Tipo_CuentaG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tipo_CuentaG"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

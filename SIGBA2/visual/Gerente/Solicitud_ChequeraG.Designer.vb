@@ -157,6 +157,7 @@ Partial Class Solicitud_ChequeraG
         Me.Controls.Add(Me.labelDivisa)
         Me.Controls.Add(Me.labelSucursal)
         Me.Name = "Solicitud_ChequeraG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Solicitud_ChequeraG"
         Me.ResumeLayout(False)
         Me.PerformLayout()

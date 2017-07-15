@@ -58,20 +58,21 @@ Partial Class Crear_AuditoriaG
         '
         Me.textBoxNroEmpleado.Location = New System.Drawing.Point(89, 30)
         Me.textBoxNroEmpleado.Name = "textBoxNroEmpleado"
-        Me.textBoxNroEmpleado.Size = New System.Drawing.Size(100, 20)
+        Me.textBoxNroEmpleado.Size = New System.Drawing.Size(134, 20)
         Me.textBoxNroEmpleado.TabIndex = 21
         '
         'textBoxMotivo
         '
         Me.textBoxMotivo.Location = New System.Drawing.Point(58, 56)
+        Me.textBoxMotivo.Multiline = True
         Me.textBoxMotivo.Name = "textBoxMotivo"
-        Me.textBoxMotivo.Size = New System.Drawing.Size(100, 20)
+        Me.textBoxMotivo.Size = New System.Drawing.Size(165, 55)
         Me.textBoxMotivo.TabIndex = 20
         '
         'labelFECHAX
         '
         Me.labelFECHAX.AutoSize = True
-        Me.labelFECHAX.Location = New System.Drawing.Point(57, 85)
+        Me.labelFECHAX.Location = New System.Drawing.Point(57, 114)
         Me.labelFECHAX.Name = "labelFECHAX"
         Me.labelFECHAX.Size = New System.Drawing.Size(42, 13)
         Me.labelFECHAX.TabIndex = 19
@@ -80,7 +81,7 @@ Partial Class Crear_AuditoriaG
         'checkBoxAdvertencia
         '
         Me.checkBoxAdvertencia.AutoSize = True
-        Me.checkBoxAdvertencia.Location = New System.Drawing.Point(83, 141)
+        Me.checkBoxAdvertencia.Location = New System.Drawing.Point(83, 170)
         Me.checkBoxAdvertencia.Name = "checkBoxAdvertencia"
         Me.checkBoxAdvertencia.Size = New System.Drawing.Size(15, 14)
         Me.checkBoxAdvertencia.TabIndex = 18
@@ -89,7 +90,7 @@ Partial Class Crear_AuditoriaG
         'checkBoxSuspension
         '
         Me.checkBoxSuspension.AutoSize = True
-        Me.checkBoxSuspension.Location = New System.Drawing.Point(82, 113)
+        Me.checkBoxSuspension.Location = New System.Drawing.Point(82, 142)
         Me.checkBoxSuspension.Name = "checkBoxSuspension"
         Me.checkBoxSuspension.Size = New System.Drawing.Size(15, 14)
         Me.checkBoxSuspension.TabIndex = 17
@@ -98,7 +99,7 @@ Partial Class Crear_AuditoriaG
         'labelAdvertencia
         '
         Me.labelAdvertencia.AutoSize = True
-        Me.labelAdvertencia.Location = New System.Drawing.Point(13, 141)
+        Me.labelAdvertencia.Location = New System.Drawing.Point(13, 170)
         Me.labelAdvertencia.Name = "labelAdvertencia"
         Me.labelAdvertencia.Size = New System.Drawing.Size(64, 13)
         Me.labelAdvertencia.TabIndex = 16
@@ -107,7 +108,7 @@ Partial Class Crear_AuditoriaG
         'labelSuspension
         '
         Me.labelSuspension.AutoSize = True
-        Me.labelSuspension.Location = New System.Drawing.Point(13, 113)
+        Me.labelSuspension.Location = New System.Drawing.Point(13, 142)
         Me.labelSuspension.Name = "labelSuspension"
         Me.labelSuspension.Size = New System.Drawing.Size(62, 13)
         Me.labelSuspension.TabIndex = 15
@@ -116,7 +117,7 @@ Partial Class Crear_AuditoriaG
         'labelFecha
         '
         Me.labelFecha.AutoSize = True
-        Me.labelFecha.Location = New System.Drawing.Point(13, 85)
+        Me.labelFecha.Location = New System.Drawing.Point(13, 114)
         Me.labelFecha.Name = "labelFecha"
         Me.labelFecha.Size = New System.Drawing.Size(37, 13)
         Me.labelFecha.TabIndex = 14
@@ -140,7 +141,7 @@ Partial Class Crear_AuditoriaG
         Me.labelNroEmpleado.TabIndex = 12
         Me.labelNroEmpleado.Text = "Nº Empleado"
         '
-        'Crear_Auditoria
+        'Crear_AuditoriaG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -157,7 +158,8 @@ Partial Class Crear_AuditoriaG
         Me.Controls.Add(Me.labelFecha)
         Me.Controls.Add(Me.labelMotivo)
         Me.Controls.Add(Me.labelNroEmpleado)
-        Me.Name = "Crear_Auditoria"
+        Me.Name = "Crear_AuditoriaG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Crear_Auditoria"
         Me.ResumeLayout(False)
         Me.PerformLayout()

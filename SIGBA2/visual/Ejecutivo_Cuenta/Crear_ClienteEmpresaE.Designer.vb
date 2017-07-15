@@ -25,7 +25,7 @@ Partial Class Crear_ClienteEmpresaE
         Me.buttonAceptar = New System.Windows.Forms.Button()
         Me.buttonDireccion = New System.Windows.Forms.Button()
         Me.ButtonComprobante = New System.Windows.Forms.Button()
-        Me.textBox1 = New System.Windows.Forms.TextBox()
+        Me.textBoxRUT = New System.Windows.Forms.TextBox()
         Me.labelDireccion = New System.Windows.Forms.Label()
         Me.labelComprobanteIngresos = New System.Windows.Forms.Label()
         Me.labelRut = New System.Windows.Forms.Label()
@@ -58,12 +58,13 @@ Partial Class Crear_ClienteEmpresaE
         Me.ButtonComprobante.Text = "Adjuntar"
         Me.ButtonComprobante.UseVisualStyleBackColor = True
         '
-        'textBox1
+        'textBoxRUT
         '
-        Me.textBox1.Location = New System.Drawing.Point(65, 65)
-        Me.textBox1.Name = "textBox1"
-        Me.textBox1.Size = New System.Drawing.Size(100, 20)
-        Me.textBox1.TabIndex = 17
+        Me.textBoxRUT.Location = New System.Drawing.Point(65, 65)
+        Me.textBoxRUT.MaxLength = 12
+        Me.textBoxRUT.Name = "textBoxRUT"
+        Me.textBoxRUT.Size = New System.Drawing.Size(100, 20)
+        Me.textBoxRUT.TabIndex = 17
         '
         'labelDireccion
         '
@@ -100,11 +101,12 @@ Partial Class Crear_ClienteEmpresaE
         Me.Controls.Add(Me.buttonAceptar)
         Me.Controls.Add(Me.buttonDireccion)
         Me.Controls.Add(Me.ButtonComprobante)
-        Me.Controls.Add(Me.textBox1)
+        Me.Controls.Add(Me.textBoxRUT)
         Me.Controls.Add(Me.labelDireccion)
         Me.Controls.Add(Me.labelComprobanteIngresos)
         Me.Controls.Add(Me.labelRut)
         Me.Name = "Crear_ClienteEmpresaE"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Crear_ClienteEmpresa"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -114,7 +116,7 @@ Partial Class Crear_ClienteEmpresaE
     Private WithEvents buttonAceptar As Button
     Private WithEvents buttonDireccion As Button
     Private WithEvents ButtonComprobante As Button
-    Private WithEvents textBox1 As TextBox
+    Private WithEvents textBoxRUT As TextBox
     Private WithEvents labelDireccion As Label
     Private WithEvents labelComprobanteIngresos As Label
     Private WithEvents labelRut As Label
