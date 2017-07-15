@@ -1,0 +1,669 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F5A6FEA-0C96-423F-A80A-75E194543AAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SIGBA2.My.MyApplication</StartupObject>
+    <RootNamespace>SIGBA2</RootNamespace>
+    <AssemblyName>SIGBA2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SIGBA2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SIGBA2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>SIGBA2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>SIGBA2.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>SIGBA2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>SIGBA2.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="visual\Analisis_Riesgo\Aprobaciones.Designer.vb">
+      <DependentUpon>Aprobaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Analisis_Riesgo\Aprobaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Cliente_NoCliente.Designer.vb">
+      <DependentUpon>Cliente_NoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Cliente_NoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Cobrar_Cheque.Designer.vb">
+      <DependentUpon>Cobrar_Cheque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Cobrar_Cheque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Confirmacion.Designer.vb">
+      <DependentUpon>Confirmacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Confirmacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\ConsultarCuenta.Designer.vb">
+      <DependentUpon>ConsultarCuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\ConsultarCuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\DepositarCheque.Designer.vb">
+      <DependentUpon>DepositarCheque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\DepositarCheque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Deposito.Designer.vb">
+      <DependentUpon>Deposito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Deposito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Fondo_Caja.Designer.vb">
+      <DependentUpon>Fondo_Caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Fondo_Caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Ingreso_Cliente.Designer.vb">
+      <DependentUpon>Ingreso_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Ingreso_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Menu_Cliente.Designer.vb">
+      <DependentUpon>Menu_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Menu_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Menu_NoCliente.Designer.vb">
+      <DependentUpon>Menu_NoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Menu_NoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Retiro.Designer.vb">
+      <DependentUpon>Retiro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Retiro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Seleccion_Cuenta.Designer.vb">
+      <DependentUpon>Seleccion_Cuenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Seleccion_Cuenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Transferencia.Designer.vb">
+      <DependentUpon>Transferencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Transferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Cajero\Ver_Saldo.Designer.vb">
+      <DependentUpon>Ver_Saldo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Ver_Saldo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Clearing\Aprobar.Designer.vb">
+      <DependentUpon>Aprobar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Clearing\Aprobar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Clearing\Crear_Solicitud.Designer.vb">
+      <DependentUpon>Crear_Solicitud.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Clearing\Crear_Solicitud.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Clearing\Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Clearing\Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Cerrar_CuentaE.Designer.vb">
+      <DependentUpon>Cerrar_CuentaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Cerrar_CuentaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Cliente_NoClienteE.Designer.vb">
+      <DependentUpon>Cliente_NoClienteE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Cliente_NoClienteE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\ConfirmacionE.Designer.vb">
+      <DependentUpon>ConfirmacionE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\ConfirmacionE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Consultar_CuentaE.Designer.vb">
+      <DependentUpon>Consultar_CuentaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Consultar_CuentaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Crear_ClienteEmpresaE.Designer.vb">
+      <DependentUpon>Crear_ClienteEmpresaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Crear_ClienteEmpresaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Crear_ClientePersonaE.Designer.vb">
+      <DependentUpon>Crear_ClientePersonaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Crear_ClientePersonaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Crear_NoClienteEmpresaE.Designer.vb">
+      <DependentUpon>Crear_NoClienteEmpresaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Crear_NoClienteEmpresaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Crear_NoClientePersonaE.Designer.vb">
+      <DependentUpon>Crear_NoClientePersonaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Crear_NoClientePersonaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Cuentas_ClienteE.Designer.vb">
+      <DependentUpon>Cuentas_ClienteE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Cuentas_ClienteE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Estado_CuentaE.Designer.vb">
+      <DependentUpon>Estado_CuentaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Estado_CuentaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Menu_EjecutivoCuentaE.Designer.vb">
+      <DependentUpon>Menu_EjecutivoCuentaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Menu_EjecutivoCuentaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\PersonaFisica_JuridicaE.Designer.vb">
+      <DependentUpon>PersonaFisica_JuridicaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\PersonaFisica_JuridicaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Seleccionar_CuentaE.Designer.vb">
+      <DependentUpon>Seleccionar_CuentaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Seleccionar_CuentaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Solicitud_ChequeraE.Designer.vb">
+      <DependentUpon>Solicitud_ChequeraE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Solicitud_ChequeraE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Tipo_CuentaE.Designer.vb">
+      <DependentUpon>Tipo_CuentaE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Ejecutivo_Cuenta\Tipo_CuentaE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Cliente_NoClienteG.Designer.vb">
+      <DependentUpon>Cliente_NoClienteG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Cliente_NoClienteG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\ConfirmacionG.Designer.vb">
+      <DependentUpon>ConfirmacionG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\ConfirmacionG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_AuditoriaG.Designer.vb">
+      <DependentUpon>Crear_AuditoriaG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_AuditoriaG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_ClienteEmpresaG.Designer.vb">
+      <DependentUpon>Crear_ClienteEmpresaG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_ClienteEmpresaG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_ClientePersonaG.Designer.vb">
+      <DependentUpon>Crear_ClientePersonaG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_ClientePersonaG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_NoClienteEmpresaG.Designer.vb">
+      <DependentUpon>Crear_NoClienteEmpresaG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_NoClienteEmpresaG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_NoClientePersonaG.Designer.vb">
+      <DependentUpon>Crear_NoClientePersonaG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Crear_NoClientePersonaG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Cuentas_ClienteG.Designer.vb">
+      <DependentUpon>Cuentas_ClienteG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Cuentas_ClienteG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Estado_CuentaG.Designer.vb">
+      <DependentUpon>Estado_CuentaG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Estado_CuentaG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Menu_auditoriasG.Designer.vb">
+      <DependentUpon>Menu_auditoriasG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Menu_auditoriasG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Menu_Gerente.Designer.vb">
+      <DependentUpon>Menu_Gerente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Menu_Gerente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\PersonaFisica_JuridicaG.Designer.vb">
+      <DependentUpon>PersonaFisica_JuridicaG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\PersonaFisica_JuridicaG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Seleccionar_CuentaG.Designer.vb">
+      <DependentUpon>Seleccionar_CuentaG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Seleccionar_CuentaG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Solicitud_ChequeraG.Designer.vb">
+      <DependentUpon>Solicitud_ChequeraG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Solicitud_ChequeraG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Tipo_CuentaG.Designer.vb">
+      <DependentUpon>Tipo_CuentaG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Tipo_CuentaG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Usuarios_ActivosG.Designer.vb">
+      <DependentUpon>Usuarios_ActivosG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Usuarios_ActivosG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Ver_AuditoriasEmpleadoG.Designer.vb">
+      <DependentUpon>Ver_AuditoriasEmpleadoG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Ver_AuditoriasEmpleadoG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Ver_AuditoriasG.Designer.vb">
+      <DependentUpon>Ver_AuditoriasG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Ver_AuditoriasG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Analisis_Riesgo\Aprobaciones.resx">
+      <DependentUpon>Aprobaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Cliente_NoCliente.resx">
+      <DependentUpon>Cliente_NoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Cobrar_Cheque.resx">
+      <DependentUpon>Cobrar_Cheque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Confirmacion.resx">
+      <DependentUpon>Confirmacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\ConsultarCuenta.resx">
+      <DependentUpon>ConsultarCuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\DepositarCheque.resx">
+      <DependentUpon>DepositarCheque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Deposito.resx">
+      <DependentUpon>Deposito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Fondo_Caja.resx">
+      <DependentUpon>Fondo_Caja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Ingreso_Cliente.resx">
+      <DependentUpon>Ingreso_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Menu_Cliente.resx">
+      <DependentUpon>Menu_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Menu_NoCliente.resx">
+      <DependentUpon>Menu_NoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Retiro.resx">
+      <DependentUpon>Retiro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Seleccion_Cuenta.resx">
+      <DependentUpon>Seleccion_Cuenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Transferencia.resx">
+      <DependentUpon>Transferencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Ver_Saldo.resx">
+      <DependentUpon>Ver_Saldo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Clearing\Aprobar.resx">
+      <DependentUpon>Aprobar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Clearing\Crear_Solicitud.resx">
+      <DependentUpon>Crear_Solicitud.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Clearing\Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Cerrar_CuentaE.resx">
+      <DependentUpon>Cerrar_CuentaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Cliente_NoClienteE.resx">
+      <DependentUpon>Cliente_NoClienteE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\ConfirmacionE.resx">
+      <DependentUpon>ConfirmacionE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Consultar_CuentaE.resx">
+      <DependentUpon>Consultar_CuentaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Crear_ClienteEmpresaE.resx">
+      <DependentUpon>Crear_ClienteEmpresaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Crear_ClientePersonaE.resx">
+      <DependentUpon>Crear_ClientePersonaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Crear_NoClienteEmpresaE.resx">
+      <DependentUpon>Crear_NoClienteEmpresaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Crear_NoClientePersonaE.resx">
+      <DependentUpon>Crear_NoClientePersonaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Cuentas_ClienteE.resx">
+      <DependentUpon>Cuentas_ClienteE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Estado_CuentaE.resx">
+      <DependentUpon>Estado_CuentaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Menu_EjecutivoCuentaE.resx">
+      <DependentUpon>Menu_EjecutivoCuentaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\PersonaFisica_JuridicaE.resx">
+      <DependentUpon>PersonaFisica_JuridicaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Seleccionar_CuentaE.resx">
+      <DependentUpon>Seleccionar_CuentaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Solicitud_ChequeraE.resx">
+      <DependentUpon>Solicitud_ChequeraE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Ejecutivo_Cuenta\Tipo_CuentaE.resx">
+      <DependentUpon>Tipo_CuentaE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Cliente_NoClienteG.resx">
+      <DependentUpon>Cliente_NoClienteG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\ConfirmacionG.resx">
+      <DependentUpon>ConfirmacionG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Crear_AuditoriaG.resx">
+      <DependentUpon>Crear_AuditoriaG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Crear_ClienteEmpresaG.resx">
+      <DependentUpon>Crear_ClienteEmpresaG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Crear_ClientePersonaG.resx">
+      <DependentUpon>Crear_ClientePersonaG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Crear_NoClienteEmpresaG.resx">
+      <DependentUpon>Crear_NoClienteEmpresaG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Crear_NoClientePersonaG.resx">
+      <DependentUpon>Crear_NoClientePersonaG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Cuentas_ClienteG.resx">
+      <DependentUpon>Cuentas_ClienteG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Estado_CuentaG.resx">
+      <DependentUpon>Estado_CuentaG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Menu_auditoriasG.resx">
+      <DependentUpon>Menu_auditoriasG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Menu_Gerente.resx">
+      <DependentUpon>Menu_Gerente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\PersonaFisica_JuridicaG.resx">
+      <DependentUpon>PersonaFisica_JuridicaG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Seleccionar_CuentaG.resx">
+      <DependentUpon>Seleccionar_CuentaG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Solicitud_ChequeraG.resx">
+      <DependentUpon>Solicitud_ChequeraG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Tipo_CuentaG.resx">
+      <DependentUpon>Tipo_CuentaG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Usuarios_ActivosG.resx">
+      <DependentUpon>Usuarios_ActivosG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Ver_AuditoriasEmpleadoG.resx">
+      <DependentUpon>Ver_AuditoriasEmpleadoG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Ver_AuditoriasG.resx">
+      <DependentUpon>Ver_AuditoriasG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="logic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
