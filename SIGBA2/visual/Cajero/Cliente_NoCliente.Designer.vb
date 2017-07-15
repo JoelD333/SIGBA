@@ -51,7 +51,7 @@ Partial Class Cliente_NoClient
         Me.ButtonSalir.Name = "ButtonSalir"
         Me.ButtonSalir.Size = New System.Drawing.Size(75, 23)
         Me.ButtonSalir.TabIndex = 4
-        Me.ButtonSalir.Text = "Salir"
+        Me.ButtonSalir.Text = "Cerrar Caja"
         Me.ButtonSalir.UseVisualStyleBackColor = True
         '
         'Cliente_NoClient

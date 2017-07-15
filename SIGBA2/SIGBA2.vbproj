@@ -154,6 +154,12 @@
     <Compile Include="visual\Analisis_Riesgo\Aprobaciones.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="visual\Cajero\Cerrar_Caja.Designer.vb">
+      <DependentUpon>Cerrar_Caja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Cajero\Cerrar_Caja.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="visual\Cajero\Cliente_NoCliente.Designer.vb">
       <DependentUpon>Cliente_NoCliente.vb</DependentUpon>
     </Compile>
@@ -470,6 +476,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="visual\Analisis_Riesgo\Aprobaciones.resx">
       <DependentUpon>Aprobaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Cajero\Cerrar_Caja.resx">
+      <DependentUpon>Cerrar_Caja.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="visual\Cajero\Cliente_NoCliente.resx">
       <DependentUpon>Cliente_NoCliente.vb</DependentUpon>

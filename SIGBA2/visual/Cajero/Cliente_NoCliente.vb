@@ -22,6 +22,12 @@
     End Sub
 
     Private Sub ButtonSalir_Click(sender As Object, e As EventArgs) Handles ButtonSalir.Click
-        Close()
+        Dim form As Cerrar_Caja = New Cerrar_Caja()
+        form.Show()
+        AddHandler form.FormClosing, AddressOf FormOnClosingX
+        Me.Hide()
+    End Sub
+    Private Sub FormOnClosingX(ByVal sender As Object, ByVal e As FormClosingEventArgs)
+        Me.Close()
     End Sub
 End Class
