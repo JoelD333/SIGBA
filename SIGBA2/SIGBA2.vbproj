@@ -436,6 +436,18 @@
     <Compile Include="visual\Gerente\Solicitud_ChequeraG.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="visual\Gerente\Sucursales.Designer.vb">
+      <DependentUpon>Sucursales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Sucursales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="visual\Gerente\Tasas.Designer.vb">
+      <DependentUpon>Tasas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="visual\Gerente\Tasas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="visual\Gerente\Tipo_CuentaG.Designer.vb">
       <DependentUpon>Tipo_CuentaG.vb</DependentUpon>
     </Compile>
@@ -617,6 +629,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="visual\Gerente\Solicitud_ChequeraG.resx">
       <DependentUpon>Solicitud_ChequeraG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Sucursales.resx">
+      <DependentUpon>Sucursales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="visual\Gerente\Tasas.resx">
+      <DependentUpon>Tasas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="visual\Gerente\Tipo_CuentaG.resx">
       <DependentUpon>Tipo_CuentaG.vb</DependentUpon>

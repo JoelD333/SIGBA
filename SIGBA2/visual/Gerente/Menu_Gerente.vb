@@ -52,4 +52,18 @@
     Private Sub ButtonSalir_Click(sender As Object, e As EventArgs) Handles ButtonSalir.Click
         Close()
     End Sub
+
+    Private Sub ButtonSucursales_Click(sender As Object, e As EventArgs) Handles ButtonSucursales.Click
+        Dim Form As Sucursales = New Sucursales()
+        AddHandler Form.FormClosing, AddressOf FormOnClosing
+        Form.Show()
+        Hide()
+    End Sub
+
+    Private Sub ButtonTasas_Click(sender As Object, e As EventArgs) Handles ButtonTasas.Click
+        Dim Form As Tasas = New Tasas()
+        AddHandler Form.FormClosing, AddressOf FormOnClosing
+        Form.Show()
+        Hide()
+    End Sub
 End Class

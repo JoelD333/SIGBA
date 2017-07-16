@@ -30,6 +30,8 @@ Partial Class Menu_Gerente
         Me.buttonAuditorias = New System.Windows.Forms.Button()
         Me.buttonNOTIFICACIONES = New System.Windows.Forms.Button()
         Me.ButtonSalir = New System.Windows.Forms.Button()
+        Me.ButtonTasas = New System.Windows.Forms.Button()
+        Me.ButtonSucursales = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'buttonCuentas_Clientes
@@ -104,11 +106,31 @@ Partial Class Menu_Gerente
         Me.ButtonSalir.Text = "Salir"
         Me.ButtonSalir.UseVisualStyleBackColor = True
         '
+        'ButtonTasas
+        '
+        Me.ButtonTasas.Location = New System.Drawing.Point(144, 184)
+        Me.ButtonTasas.Name = "ButtonTasas"
+        Me.ButtonTasas.Size = New System.Drawing.Size(110, 23)
+        Me.ButtonTasas.TabIndex = 16
+        Me.ButtonTasas.Text = "Tasas"
+        Me.ButtonTasas.UseVisualStyleBackColor = True
+        '
+        'ButtonSucursales
+        '
+        Me.ButtonSucursales.Location = New System.Drawing.Point(35, 184)
+        Me.ButtonSucursales.Name = "ButtonSucursales"
+        Me.ButtonSucursales.Size = New System.Drawing.Size(103, 23)
+        Me.ButtonSucursales.TabIndex = 15
+        Me.ButtonSucursales.Text = "Sucursales"
+        Me.ButtonSucursales.UseVisualStyleBackColor = True
+        '
         'Menu_Gerente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 226)
+        Me.Controls.Add(Me.ButtonTasas)
+        Me.Controls.Add(Me.ButtonSucursales)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.buttonCuentas_Clientes)
         Me.Controls.Add(Me.buttonUsuariosActivos)
@@ -132,4 +154,6 @@ Partial Class Menu_Gerente
     Private WithEvents buttonAuditorias As Button
     Private WithEvents buttonNOTIFICACIONES As Button
     Friend WithEvents ButtonSalir As Button
+    Private WithEvents ButtonTasas As Button
+    Private WithEvents ButtonSucursales As Button
 End Class
