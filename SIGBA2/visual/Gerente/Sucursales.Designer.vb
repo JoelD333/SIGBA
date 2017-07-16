@@ -29,13 +29,16 @@ Partial Class Sucursales
         Me.Calle = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Numero_Puerta = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Telefonos = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.Pais = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Departamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Esquina = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Calle, Me.Numero_Puerta, Me.Telefonos})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ID, Me.Nombre, Me.Calle, Me.Numero_Puerta, Me.Telefonos, Me.Pais, Me.Departamento, Me.Esquina})
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.DataGridView1.Location = New System.Drawing.Point(0, 42)
         Me.DataGridView1.Name = "DataGridView1"
@@ -76,6 +79,21 @@ Partial Class Sucursales
         Me.Telefonos.HeaderText = "Telefonos"
         Me.Telefonos.Name = "Telefonos"
         '
+        'Pais
+        '
+        Me.Pais.HeaderText = "País"
+        Me.Pais.Name = "Pais"
+        '
+        'Departamento
+        '
+        Me.Departamento.HeaderText = "Departamento"
+        Me.Departamento.Name = "Departamento"
+        '
+        'Esquina
+        '
+        Me.Esquina.HeaderText = "Esquina"
+        Me.Esquina.Name = "Esquina"
+        '
         'Sucursales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -97,4 +115,7 @@ Partial Class Sucursales
     Friend WithEvents Numero_Puerta As DataGridViewTextBoxColumn
     Friend WithEvents Telefonos As DataGridViewComboBoxColumn
     Friend WithEvents ButtonSalir As Button
+    Friend WithEvents Pais As DataGridViewTextBoxColumn
+    Friend WithEvents Departamento As DataGridViewTextBoxColumn
+    Friend WithEvents Esquina As DataGridViewTextBoxColumn
 End Class
