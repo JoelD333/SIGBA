@@ -75,6 +75,7 @@ Partial Class Retiro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.buttonAceptar)
         Me.Controls.Add(Me.comboBoxDivisa)
@@ -82,6 +83,7 @@ Partial Class Retiro
         Me.Controls.Add(Me.labelDivisa)
         Me.Controls.Add(Me.labelMonto)
         Me.Name = "Retiro"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Retiro"
         Me.ResumeLayout(False)
         Me.PerformLayout()

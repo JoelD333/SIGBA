@@ -105,6 +105,7 @@ Partial Class Crear_ClientePersonaG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.comboBoxIdentificacion)
         Me.Controls.Add(Me.buttonAceptar)
@@ -115,6 +116,7 @@ Partial Class Crear_ClientePersonaG
         Me.Controls.Add(Me.labelReciboSueldo)
         Me.Controls.Add(Me.labelIdentificacion)
         Me.Name = "Crear_ClientePersonaG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Crear_ClientePersonaG"
         Me.ResumeLayout(False)
         Me.PerformLayout()

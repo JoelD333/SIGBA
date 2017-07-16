@@ -123,7 +123,7 @@ Partial Class ConsultarCuenta
         Me.tabPageCalendario.Location = New System.Drawing.Point(4, 22)
         Me.tabPageCalendario.Name = "tabPageCalendario"
         Me.tabPageCalendario.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabPageCalendario.Size = New System.Drawing.Size(538, 235)
+        Me.tabPageCalendario.Size = New System.Drawing.Size(538, 201)
         Me.tabPageCalendario.TabIndex = 1
         Me.tabPageCalendario.Text = "Calendario de Pagos"
         Me.tabPageCalendario.UseVisualStyleBackColor = True
@@ -134,7 +134,7 @@ Partial Class ConsultarCuenta
         Me.tabPageUltimosMovimientos.Location = New System.Drawing.Point(4, 22)
         Me.tabPageUltimosMovimientos.Name = "tabPageUltimosMovimientos"
         Me.tabPageUltimosMovimientos.Padding = New System.Windows.Forms.Padding(3)
-        Me.tabPageUltimosMovimientos.Size = New System.Drawing.Size(538, 235)
+        Me.tabPageUltimosMovimientos.Size = New System.Drawing.Size(538, 201)
         Me.tabPageUltimosMovimientos.TabIndex = 2
         Me.tabPageUltimosMovimientos.Text = "Últimos veinte movimientos"
         Me.tabPageUltimosMovimientos.UseVisualStyleBackColor = True
@@ -149,7 +149,7 @@ Partial Class ConsultarCuenta
         Me.dataGridView2.Location = New System.Drawing.Point(3, 3)
         Me.dataGridView2.Name = "dataGridView2"
         Me.dataGridView2.ReadOnly = True
-        Me.dataGridView2.Size = New System.Drawing.Size(532, 229)
+        Me.dataGridView2.Size = New System.Drawing.Size(532, 195)
         Me.dataGridView2.TabIndex = 1
         '
         'dataGridViewTextBoxColumn3
@@ -189,6 +189,7 @@ Partial Class ConsultarCuenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(546, 261)
         Me.Controls.Add(Me.ButtonAtras)
         Me.Controls.Add(Me.tabControl)

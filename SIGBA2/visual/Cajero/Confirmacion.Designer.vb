@@ -33,6 +33,7 @@ Partial Class Confirmacion
         Me.TextBoxContraseña.Name = "TextBoxContraseña"
         Me.TextBoxContraseña.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxContraseña.TabIndex = 6
+        Me.TextBoxContraseña.UseSystemPasswordChar = True
         '
         'LabelContraseña
         '
@@ -56,6 +57,7 @@ Partial Class Confirmacion
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.ButtonConfirmar)
         Me.Controls.Add(Me.TextBoxContraseña)

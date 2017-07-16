@@ -125,6 +125,7 @@ Partial Class Cuentas_ClienteE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGreen
         Me.ClientSize = New System.Drawing.Size(543, 261)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.dataGridView1)
@@ -133,6 +134,7 @@ Partial Class Cuentas_ClienteE
         Me.Controls.Add(Me.comboBoxIdentificacion)
         Me.Controls.Add(Me.labelIdentificacion)
         Me.Name = "Cuentas_ClienteE"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cuentas_Cliente"
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

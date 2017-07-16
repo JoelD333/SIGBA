@@ -232,6 +232,7 @@ Partial Class Crear_NoClienteEmpresaG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(284, 366)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.buttonAceptar)

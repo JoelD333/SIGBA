@@ -28,6 +28,7 @@ Partial Class Usuarios_ActivosG
         Me.Inicio_Sistema = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Fecha = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NroAuditorias = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ButtonSalir = New System.Windows.Forms.Button()
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -37,11 +38,11 @@ Partial Class Usuarios_ActivosG
         Me.dataGridView1.AllowUserToDeleteRows = False
         Me.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Cargo, Me.NroEmpleado, Me.Inicio_Sistema, Me.Fecha, Me.NroAuditorias})
-        Me.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.dataGridView1.Location = New System.Drawing.Point(0, 42)
         Me.dataGridView1.Name = "dataGridView1"
         Me.dataGridView1.ReadOnly = True
-        Me.dataGridView1.Size = New System.Drawing.Size(427, 261)
+        Me.dataGridView1.Size = New System.Drawing.Size(427, 219)
         Me.dataGridView1.TabIndex = 1
         '
         'Cargo
@@ -74,11 +75,22 @@ Partial Class Usuarios_ActivosG
         Me.NroAuditorias.Name = "NroAuditorias"
         Me.NroAuditorias.ReadOnly = True
         '
+        'ButtonSalir
+        '
+        Me.ButtonSalir.Location = New System.Drawing.Point(13, 13)
+        Me.ButtonSalir.Name = "ButtonSalir"
+        Me.ButtonSalir.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonSalir.TabIndex = 2
+        Me.ButtonSalir.Text = "<"
+        Me.ButtonSalir.UseVisualStyleBackColor = True
+        '
         'Usuarios_ActivosG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(427, 261)
+        Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.dataGridView1)
         Me.Name = "Usuarios_ActivosG"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -94,4 +106,5 @@ Partial Class Usuarios_ActivosG
     Private WithEvents Inicio_Sistema As DataGridViewTextBoxColumn
     Private WithEvents Fecha As DataGridViewTextBoxColumn
     Private WithEvents NroAuditorias As DataGridViewTextBoxColumn
+    Friend WithEvents ButtonSalir As Button
 End Class

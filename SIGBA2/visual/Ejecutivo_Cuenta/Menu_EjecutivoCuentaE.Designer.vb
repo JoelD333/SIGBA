@@ -98,6 +98,7 @@ Partial Class Menu_EjecutivoCuentaE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGreen
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.ButtonCuentasCliente)
@@ -107,6 +108,7 @@ Partial Class Menu_EjecutivoCuentaE
         Me.Controls.Add(Me.buttonCerrarCuenta)
         Me.Controls.Add(Me.buttonCrearCuenta)
         Me.Name = "Menu_EjecutivoCuentaE"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_EjecutivoCuenta"
         Me.ResumeLayout(False)
 

@@ -58,6 +58,7 @@ Partial Class Cliente_NoClient
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.buttonNoCliente)

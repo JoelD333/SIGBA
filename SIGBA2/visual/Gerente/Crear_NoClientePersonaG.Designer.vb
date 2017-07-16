@@ -220,6 +220,7 @@ Partial Class Crear_NoClientePersonaG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(301, 392)
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.comboBoxIdentificacion)
@@ -243,6 +244,7 @@ Partial Class Crear_NoClientePersonaG
         Me.Controls.Add(Me.labelNombreSegundo)
         Me.Controls.Add(Me.labelNombrePrimero)
         Me.Name = "Crear_NoClientePersonaG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Crear_NoClientePersonaG"
         Me.ResumeLayout(False)
         Me.PerformLayout()

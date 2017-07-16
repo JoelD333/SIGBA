@@ -38,27 +38,31 @@ Partial Class ConfirmacionG
         '
         'TextBoxContraseña
         '
-        Me.TextBoxContraseña.Location = New System.Drawing.Point(120, 121)
+        Me.TextBoxContraseña.Location = New System.Drawing.Point(134, 118)
         Me.TextBoxContraseña.Name = "TextBoxContraseña"
         Me.TextBoxContraseña.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxContraseña.TabIndex = 10
+        Me.TextBoxContraseña.UseSystemPasswordChar = True
         '
         'LabelContrasena
         '
         Me.LabelContrasena.AutoSize = True
+        Me.LabelContrasena.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelContrasena.Location = New System.Drawing.Point(53, 121)
         Me.LabelContrasena.Name = "LabelContrasena"
-        Me.LabelContrasena.Size = New System.Drawing.Size(64, 13)
+        Me.LabelContrasena.Size = New System.Drawing.Size(75, 13)
         Me.LabelContrasena.TabIndex = 11
         Me.LabelContrasena.Text = "Contraseña:"
         '
         'ConfirmacionG
         '
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.LabelContrasena)
         Me.Controls.Add(Me.TextBoxContraseña)
         Me.Controls.Add(Me.ButtonConfirmar)
         Me.Name = "ConfirmacionG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

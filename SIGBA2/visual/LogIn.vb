@@ -9,38 +9,50 @@
 
     Private Sub ButtonIniciar_Click(sender As Object, e As EventArgs) Handles ButtonIniciar.Click
 
-        If TextBoxUsuario.Text = "Cajero" Then
+        If ComboBoxRol.SelectedItem = "Cajero" Then
             Dim form1 As Fondo_Caja = New Fondo_Caja()
             AddHandler form1.FormClosing, AddressOf FormOnClosing
             form1.Show()
             Me.Hide()
-        ElseIf TextBoxUsuario.Text = "Gerente" Then
+        ElseIf ComboBoxRol.SelectedItem = "Gerente" Then
             Dim form1 As Menu_Gerente = New Menu_Gerente()
             AddHandler form1.FormClosing, AddressOf FormOnClosing
             form1.Show()
             Me.Hide()
-        ElseIf TextBoxUsuario.Text = "Ejecutivo" Then
+        ElseIf ComboBoxRol.SelectedItem = "Ejecutivo de Cuenta" Then
             Dim form1 As Menu_EjecutivoCuentaE = New Menu_EjecutivoCuentaE()
             AddHandler form1.FormClosing, AddressOf FormOnClosing
             form1.Show()
             Me.Hide()
-        ElseIf TextBoxUsuario.Text = "Clearing" Then
+        ElseIf ComboBoxRol.SelectedItem = "Clearing" Then
             Dim form1 As Menu = New Menu()
             AddHandler form1.FormClosing, AddressOf FormOnClosing
             form1.Show()
             Me.Hide()
-        ElseIf TextBoxUsuario.Text = "Riesgo" Then
+        ElseIf ComboBoxRol.SelectedItem = "Analisis de Riesgo" Then
             Dim form1 As Aprobaciones = New Aprobaciones()
             AddHandler form1.FormClosing, AddressOf FormOnClosing
             form1.Show()
             Me.Hide()
         Else
-            MessageBox.Show("Usuario Incorrecto")
+            MessageBox.Show("No ha seleccionado nigun Rol")
         End If
 
 
 
 
 
+    End Sub
+
+    Private Sub TextBoxUsuario_TextChanged(sender As Object, e As EventArgs) Handles TextBoxUsuario.TextChanged
+        If TextBoxUsuario.Text = "" Then
+            ComboBoxRol.Items.Clear()
+        Else
+            ComboBoxRol.Items.Clear()
+            Dim Roles = New String() {"Cajero", "Gerente", "Clearing", "Ejecutivo de Cuenta", "Analisis de Riesgo"}
+            For Each item As String In Roles
+                ComboBoxRol.Items.Add(item)
+            Next
+        End If
     End Sub
 End Class

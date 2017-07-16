@@ -28,14 +28,18 @@ Partial Class LogIn
         Me.TextBoxUsuario = New System.Windows.Forms.TextBox()
         Me.TextBoxContraseña = New System.Windows.Forms.TextBox()
         Me.ButtonIniciar = New System.Windows.Forms.Button()
+        Me.LabelRol = New System.Windows.Forms.Label()
+        Me.ComboBoxRol = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'LinkLabelLenguaje
         '
         Me.LinkLabelLenguaje.AutoSize = True
+        Me.LinkLabelLenguaje.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabelLenguaje.LinkColor = System.Drawing.Color.Black
         Me.LinkLabelLenguaje.Location = New System.Drawing.Point(13, 13)
         Me.LinkLabelLenguaje.Name = "LinkLabelLenguaje"
-        Me.LinkLabelLenguaje.Size = New System.Drawing.Size(175, 13)
+        Me.LinkLabelLenguaje.Size = New System.Drawing.Size(206, 13)
         Me.LinkLabelLenguaje.TabIndex = 0
         Me.LinkLabelLenguaje.TabStop = True
         Me.LinkLabelLenguaje.Text = "Cambiar Idioma/ Change Language"
@@ -43,7 +47,7 @@ Partial Class LogIn
         'LabelUsuario
         '
         Me.LabelUsuario.AutoSize = True
-        Me.LabelUsuario.Location = New System.Drawing.Point(85, 66)
+        Me.LabelUsuario.Location = New System.Drawing.Point(102, 74)
         Me.LabelUsuario.Name = "LabelUsuario"
         Me.LabelUsuario.Size = New System.Drawing.Size(46, 13)
         Me.LabelUsuario.TabIndex = 1
@@ -60,7 +64,7 @@ Partial Class LogIn
         '
         'TextBoxUsuario
         '
-        Me.TextBoxUsuario.Location = New System.Drawing.Point(138, 66)
+        Me.TextBoxUsuario.Location = New System.Drawing.Point(155, 74)
         Me.TextBoxUsuario.Name = "TextBoxUsuario"
         Me.TextBoxUsuario.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxUsuario.TabIndex = 3
@@ -71,6 +75,7 @@ Partial Class LogIn
         Me.TextBoxContraseña.Name = "TextBoxContraseña"
         Me.TextBoxContraseña.Size = New System.Drawing.Size(100, 20)
         Me.TextBoxContraseña.TabIndex = 4
+        Me.TextBoxContraseña.UseSystemPasswordChar = True
         '
         'ButtonIniciar
         '
@@ -81,11 +86,31 @@ Partial Class LogIn
         Me.ButtonIniciar.Text = "Iniciar Sesion"
         Me.ButtonIniciar.UseVisualStyleBackColor = True
         '
+        'LabelRol
+        '
+        Me.LabelRol.AutoSize = True
+        Me.LabelRol.Location = New System.Drawing.Point(122, 125)
+        Me.LabelRol.Name = "LabelRol"
+        Me.LabelRol.Size = New System.Drawing.Size(26, 13)
+        Me.LabelRol.TabIndex = 6
+        Me.LabelRol.Text = "Rol:"
+        '
+        'ComboBoxRol
+        '
+        Me.ComboBoxRol.FormattingEnabled = True
+        Me.ComboBoxRol.Location = New System.Drawing.Point(155, 125)
+        Me.ComboBoxRol.Name = "ComboBoxRol"
+        Me.ComboBoxRol.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBoxRol.TabIndex = 7
+        '
         'LogIn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(403, 212)
+        Me.Controls.Add(Me.ComboBoxRol)
+        Me.Controls.Add(Me.LabelRol)
         Me.Controls.Add(Me.ButtonIniciar)
         Me.Controls.Add(Me.TextBoxContraseña)
         Me.Controls.Add(Me.TextBoxUsuario)
@@ -106,4 +131,6 @@ Partial Class LogIn
     Friend WithEvents TextBoxUsuario As TextBox
     Friend WithEvents TextBoxContraseña As TextBox
     Friend WithEvents ButtonIniciar As Button
+    Friend WithEvents LabelRol As Label
+    Friend WithEvents ComboBoxRol As ComboBox
 End Class

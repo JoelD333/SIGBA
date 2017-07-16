@@ -46,7 +46,7 @@ Partial Class Cuentas_ClienteG
         Me.dataGridView1.Location = New System.Drawing.Point(0, 92)
         Me.dataGridView1.Name = "dataGridView1"
         Me.dataGridView1.ReadOnly = True
-        Me.dataGridView1.Size = New System.Drawing.Size(546, 182)
+        Me.dataGridView1.Size = New System.Drawing.Size(543, 182)
         Me.dataGridView1.TabIndex = 14
         '
         'NroCuenta
@@ -82,15 +82,16 @@ Partial Class Cuentas_ClienteG
         'labelCuentas
         '
         Me.labelCuentas.AutoSize = True
+        Me.labelCuentas.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelCuentas.Location = New System.Drawing.Point(12, 76)
         Me.labelCuentas.Name = "labelCuentas"
-        Me.labelCuentas.Size = New System.Drawing.Size(98, 13)
+        Me.labelCuentas.Size = New System.Drawing.Size(115, 13)
         Me.labelCuentas.TabIndex = 13
         Me.labelCuentas.Text = "Cuentas Asociadas"
         '
         'textBoxIdentificaion
         '
-        Me.textBoxIdentificaion.Location = New System.Drawing.Point(217, 45)
+        Me.textBoxIdentificaion.Location = New System.Drawing.Point(230, 42)
         Me.textBoxIdentificaion.Name = "textBoxIdentificaion"
         Me.textBoxIdentificaion.Size = New System.Drawing.Size(121, 20)
         Me.textBoxIdentificaion.TabIndex = 12
@@ -98,7 +99,7 @@ Partial Class Cuentas_ClienteG
         'comboBoxIdentificacion
         '
         Me.comboBoxIdentificacion.FormattingEnabled = True
-        Me.comboBoxIdentificacion.Location = New System.Drawing.Point(89, 45)
+        Me.comboBoxIdentificacion.Location = New System.Drawing.Point(102, 42)
         Me.comboBoxIdentificacion.Name = "comboBoxIdentificacion"
         Me.comboBoxIdentificacion.Size = New System.Drawing.Size(121, 21)
         Me.comboBoxIdentificacion.TabIndex = 11
@@ -106,9 +107,10 @@ Partial Class Cuentas_ClienteG
         'labelIdentificacion
         '
         Me.labelIdentificacion.AutoSize = True
+        Me.labelIdentificacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelIdentificacion.Location = New System.Drawing.Point(12, 45)
         Me.labelIdentificacion.Name = "labelIdentificacion"
-        Me.labelIdentificacion.Size = New System.Drawing.Size(70, 13)
+        Me.labelIdentificacion.Size = New System.Drawing.Size(84, 13)
         Me.labelIdentificacion.TabIndex = 10
         Me.labelIdentificacion.Text = "Identificación"
         '
@@ -125,7 +127,8 @@ Partial Class Cuentas_ClienteG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(546, 274)
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.ClientSize = New System.Drawing.Size(543, 274)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.dataGridView1)
         Me.Controls.Add(Me.labelCuentas)

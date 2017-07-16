@@ -60,11 +60,13 @@ Partial Class Ver_Saldo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.ButtonAceptar)
         Me.Controls.Add(Me.labelSALDOX)
         Me.Controls.Add(Me.labelSaldo)
         Me.Name = "Ver_Saldo"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Ver_Saldo"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -109,10 +109,12 @@ Partial Class Aprobar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Yellow
         Me.ClientSize = New System.Drawing.Size(453, 261)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.dataGridView1)
         Me.Name = "Aprobar"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aprobar"
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

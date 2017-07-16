@@ -118,6 +118,7 @@ Partial Class Menu_Cliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.ButtonAtras)
         Me.Controls.Add(Me.buttonVerSaldo)
@@ -129,6 +130,7 @@ Partial Class Menu_Cliente
         Me.Controls.Add(Me.buttonTransferencia)
         Me.Controls.Add(Me.buttonCalendarioPagos)
         Me.Name = "Menu_Cliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_Cliente"
         Me.ResumeLayout(False)
 

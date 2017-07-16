@@ -52,6 +52,7 @@ Partial Class PersonaFisica_JuridicaG
         Me.Controls.Add(Me.buttonPersonaJuridica)
         Me.Controls.Add(Me.buttonPersonaFisica)
         Me.Name = "PersonaFisica_JuridicaG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PersonaFisica_JuridicaG"
         Me.ResumeLayout(False)
 

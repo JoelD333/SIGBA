@@ -121,6 +121,7 @@ Partial Class Deposito
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(341, 261)
         Me.Controls.Add(Me.ButtonAceptar)
         Me.Controls.Add(Me.textBoxIdentificacion)
@@ -133,6 +134,7 @@ Partial Class Deposito
         Me.Controls.Add(Me.labelNroCuenta)
         Me.Controls.Add(Me.labelIdentificacion)
         Me.Name = "Deposito"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Deposito"
         Me.ResumeLayout(False)
         Me.PerformLayout()

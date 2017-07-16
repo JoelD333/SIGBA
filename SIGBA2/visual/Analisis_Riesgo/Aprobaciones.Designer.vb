@@ -109,10 +109,12 @@ Partial Class Aprobaciones
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Red
         Me.ClientSize = New System.Drawing.Size(605, 261)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.dataGridView1)
         Me.Name = "Aprobaciones"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Aprobaciones"
         CType(Me.dataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

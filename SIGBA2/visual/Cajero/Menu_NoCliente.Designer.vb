@@ -68,12 +68,14 @@ Partial Class Menu_NoCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(315, 261)
         Me.Controls.Add(Me.ButtonAtras)
         Me.Controls.Add(Me.buttonDepositarC)
         Me.Controls.Add(Me.buttonCobrarC)
         Me.Controls.Add(Me.buttonDeposito)
         Me.Name = "Menu_NoCliente"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu_NoCliente"
         Me.ResumeLayout(False)
 

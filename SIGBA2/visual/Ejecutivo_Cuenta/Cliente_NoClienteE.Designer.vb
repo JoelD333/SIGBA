@@ -48,10 +48,12 @@ Partial Class Cliente_NoClienteE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGreen
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.buttonNoCliente)
         Me.Controls.Add(Me.buttonCliente)
         Me.Name = "Cliente_NoClienteE"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cliente_NoClienteE"
         Me.ResumeLayout(False)
 

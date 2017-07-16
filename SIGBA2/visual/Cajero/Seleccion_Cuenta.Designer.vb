@@ -107,12 +107,14 @@ Partial Class Seleccion_Cuenta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(559, 281)
         Me.Controls.Add(Me.buttonCancelar)
         Me.Controls.Add(Me.buttonAceptar)
         Me.Controls.Add(Me.dataGridViewCuentas)
         Me.Controls.Add(Me.labelCuentas)
         Me.Name = "Seleccion_Cuenta"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Seleccion_Cuenta"
         CType(Me.dataGridViewCuentas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

@@ -70,7 +70,7 @@ Partial Class Tipo_CuentaE
         Me.labelCuentaSueldo.AutoSize = True
         Me.labelCuentaSueldo.Location = New System.Drawing.Point(6, 65)
         Me.labelCuentaSueldo.Name = "labelCuentaSueldo"
-        Me.labelCuentaSueldo.Size = New System.Drawing.Size(80, 13)
+        Me.labelCuentaSueldo.Size = New System.Drawing.Size(94, 13)
         Me.labelCuentaSueldo.TabIndex = 21
         Me.labelCuentaSueldo.Text = "Cuenta Sueldo:"
         '
@@ -79,7 +79,7 @@ Partial Class Tipo_CuentaE
         Me.labelCuentaCorriente.AutoSize = True
         Me.labelCuentaCorriente.Location = New System.Drawing.Point(6, 41)
         Me.labelCuentaCorriente.Name = "labelCuentaCorriente"
-        Me.labelCuentaCorriente.Size = New System.Drawing.Size(89, 13)
+        Me.labelCuentaCorriente.Size = New System.Drawing.Size(106, 13)
         Me.labelCuentaCorriente.TabIndex = 20
         Me.labelCuentaCorriente.Text = "Cuenta Corriente:"
         '
@@ -88,23 +88,24 @@ Partial Class Tipo_CuentaE
         Me.labelCajaAhorro.AutoSize = True
         Me.labelCajaAhorro.Location = New System.Drawing.Point(6, 16)
         Me.labelCajaAhorro.Name = "labelCajaAhorro"
-        Me.labelCajaAhorro.Size = New System.Drawing.Size(80, 13)
+        Me.labelCajaAhorro.Size = New System.Drawing.Size(95, 13)
         Me.labelCajaAhorro.TabIndex = 19
         Me.labelCajaAhorro.Text = "Caja de Ahorro:"
         '
         'labelTitulo
         '
         Me.labelTitulo.AutoSize = True
-        Me.labelTitulo.Location = New System.Drawing.Point(99, 9)
+        Me.labelTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelTitulo.Location = New System.Drawing.Point(83, 9)
         Me.labelTitulo.Name = "labelTitulo"
-        Me.labelTitulo.Size = New System.Drawing.Size(80, 13)
+        Me.labelTitulo.Size = New System.Drawing.Size(114, 16)
         Me.labelTitulo.TabIndex = 18
         Me.labelTitulo.Text = "Tipo de Cuenta"
         '
         'RadioButtonAhorro
         '
         Me.RadioButtonAhorro.AutoSize = True
-        Me.RadioButtonAhorro.Location = New System.Drawing.Point(96, 16)
+        Me.RadioButtonAhorro.Location = New System.Drawing.Point(107, 16)
         Me.RadioButtonAhorro.Name = "RadioButtonAhorro"
         Me.RadioButtonAhorro.Size = New System.Drawing.Size(14, 13)
         Me.RadioButtonAhorro.TabIndex = 27
@@ -114,7 +115,7 @@ Partial Class Tipo_CuentaE
         'RadioButtonCorriente
         '
         Me.RadioButtonCorriente.AutoSize = True
-        Me.RadioButtonCorriente.Location = New System.Drawing.Point(101, 41)
+        Me.RadioButtonCorriente.Location = New System.Drawing.Point(118, 41)
         Me.RadioButtonCorriente.Name = "RadioButtonCorriente"
         Me.RadioButtonCorriente.Size = New System.Drawing.Size(14, 13)
         Me.RadioButtonCorriente.TabIndex = 28
@@ -124,7 +125,7 @@ Partial Class Tipo_CuentaE
         'RadioButtonSaldo
         '
         Me.RadioButtonSaldo.AutoSize = True
-        Me.RadioButtonSaldo.Location = New System.Drawing.Point(92, 64)
+        Me.RadioButtonSaldo.Location = New System.Drawing.Point(106, 65)
         Me.RadioButtonSaldo.Name = "RadioButtonSaldo"
         Me.RadioButtonSaldo.Size = New System.Drawing.Size(14, 13)
         Me.RadioButtonSaldo.TabIndex = 29
@@ -139,9 +140,10 @@ Partial Class Tipo_CuentaE
         Me.GroupBox1.Controls.Add(Me.labelCuentaCorriente)
         Me.GroupBox1.Controls.Add(Me.RadioButtonAhorro)
         Me.GroupBox1.Controls.Add(Me.labelCuentaSueldo)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 25)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(147, 78)
+        Me.GroupBox1.Size = New System.Drawing.Size(147, 86)
         Me.GroupBox1.TabIndex = 30
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
@@ -149,7 +151,7 @@ Partial Class Tipo_CuentaE
         'RadioButtonJuridica
         '
         Me.RadioButtonJuridica.AutoSize = True
-        Me.RadioButtonJuridica.Location = New System.Drawing.Point(101, 50)
+        Me.RadioButtonJuridica.Location = New System.Drawing.Point(117, 50)
         Me.RadioButtonJuridica.Name = "RadioButtonJuridica"
         Me.RadioButtonJuridica.Size = New System.Drawing.Size(14, 13)
         Me.RadioButtonJuridica.TabIndex = 35
@@ -159,7 +161,7 @@ Partial Class Tipo_CuentaE
         'RadioButtonFisica
         '
         Me.RadioButtonFisica.AutoSize = True
-        Me.RadioButtonFisica.Location = New System.Drawing.Point(96, 25)
+        Me.RadioButtonFisica.Location = New System.Drawing.Point(106, 25)
         Me.RadioButtonFisica.Name = "RadioButtonFisica"
         Me.RadioButtonFisica.Size = New System.Drawing.Size(14, 13)
         Me.RadioButtonFisica.TabIndex = 34
@@ -171,7 +173,7 @@ Partial Class Tipo_CuentaE
         Me.LabelJuridica.AutoSize = True
         Me.LabelJuridica.Location = New System.Drawing.Point(6, 50)
         Me.LabelJuridica.Name = "LabelJuridica"
-        Me.LabelJuridica.Size = New System.Drawing.Size(88, 13)
+        Me.LabelJuridica.Size = New System.Drawing.Size(105, 13)
         Me.LabelJuridica.TabIndex = 32
         Me.LabelJuridica.Text = "Persona Juridica:"
         '
@@ -180,7 +182,7 @@ Partial Class Tipo_CuentaE
         Me.LabelFisica.AutoSize = True
         Me.LabelFisica.Location = New System.Drawing.Point(6, 25)
         Me.LabelFisica.Name = "LabelFisica"
-        Me.LabelFisica.Size = New System.Drawing.Size(79, 13)
+        Me.LabelFisica.Size = New System.Drawing.Size(94, 13)
         Me.LabelFisica.TabIndex = 31
         Me.LabelFisica.Text = "Persona Fisica:"
         '
@@ -190,6 +192,7 @@ Partial Class Tipo_CuentaE
         Me.GroupBox2.Controls.Add(Me.LabelFisica)
         Me.GroupBox2.Controls.Add(Me.RadioButtonFisica)
         Me.GroupBox2.Controls.Add(Me.LabelJuridica)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(12, 109)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(144, 69)
@@ -200,7 +203,7 @@ Partial Class Tipo_CuentaE
         'RadioButtonNoCliente
         '
         Me.RadioButtonNoCliente.AutoSize = True
-        Me.RadioButtonNoCliente.Location = New System.Drawing.Point(71, 59)
+        Me.RadioButtonNoCliente.Location = New System.Drawing.Point(82, 59)
         Me.RadioButtonNoCliente.Name = "RadioButtonNoCliente"
         Me.RadioButtonNoCliente.Size = New System.Drawing.Size(14, 13)
         Me.RadioButtonNoCliente.TabIndex = 40
@@ -210,7 +213,7 @@ Partial Class Tipo_CuentaE
         'RadioButtonCliente
         '
         Me.RadioButtonCliente.AutoSize = True
-        Me.RadioButtonCliente.Location = New System.Drawing.Point(54, 36)
+        Me.RadioButtonCliente.Location = New System.Drawing.Point(62, 36)
         Me.RadioButtonCliente.Name = "RadioButtonCliente"
         Me.RadioButtonCliente.Size = New System.Drawing.Size(14, 13)
         Me.RadioButtonCliente.TabIndex = 39
@@ -222,7 +225,7 @@ Partial Class Tipo_CuentaE
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(6, 59)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(59, 13)
+        Me.Label1.Size = New System.Drawing.Size(70, 13)
         Me.Label1.TabIndex = 38
         Me.Label1.Text = "No Cliente:"
         '
@@ -231,7 +234,7 @@ Partial Class Tipo_CuentaE
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(6, 36)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(42, 13)
+        Me.Label2.Size = New System.Drawing.Size(50, 13)
         Me.Label2.TabIndex = 36
         Me.Label2.Text = "Cliente:"
         '
@@ -241,6 +244,7 @@ Partial Class Tipo_CuentaE
         Me.GroupBox3.Controls.Add(Me.RadioButtonNoCliente)
         Me.GroupBox3.Controls.Add(Me.Label2)
         Me.GroupBox3.Controls.Add(Me.Label1)
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.Location = New System.Drawing.Point(15, 182)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(141, 96)
@@ -252,6 +256,7 @@ Partial Class Tipo_CuentaE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGreen
         Me.ClientSize = New System.Drawing.Size(284, 319)
         Me.Controls.Add(Me.buttonCancelar)
         Me.Controls.Add(Me.buttonAceptar)
@@ -260,6 +265,7 @@ Partial Class Tipo_CuentaE
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Name = "Tipo_CuentaE"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tipo_Cuenta"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

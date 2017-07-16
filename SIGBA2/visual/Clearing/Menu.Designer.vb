@@ -58,11 +58,13 @@ Partial Class Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Yellow
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.buttonSolicitud)
         Me.Controls.Add(Me.buttonAprobaciones)
         Me.Name = "Menu"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
         Me.ResumeLayout(False)
 

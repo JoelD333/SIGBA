@@ -35,7 +35,7 @@ Partial Class Ver_AuditoriasEmpleadoG
         '
         'textBoxNroEmpleado
         '
-        Me.textBoxNroEmpleado.Location = New System.Drawing.Point(90, 6)
+        Me.textBoxNroEmpleado.Location = New System.Drawing.Point(102, 6)
         Me.textBoxNroEmpleado.Name = "textBoxNroEmpleado"
         Me.textBoxNroEmpleado.Size = New System.Drawing.Size(100, 20)
         Me.textBoxNroEmpleado.TabIndex = 6
@@ -43,9 +43,10 @@ Partial Class Ver_AuditoriasEmpleadoG
         'labelNroEmpleado
         '
         Me.labelNroEmpleado.AutoSize = True
+        Me.labelNroEmpleado.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.labelNroEmpleado.Location = New System.Drawing.Point(12, 9)
         Me.labelNroEmpleado.Name = "labelNroEmpleado"
-        Me.labelNroEmpleado.Size = New System.Drawing.Size(72, 13)
+        Me.labelNroEmpleado.Size = New System.Drawing.Size(84, 13)
         Me.labelNroEmpleado.TabIndex = 5
         Me.labelNroEmpleado.Text = "Nº Empleado:"
         '
@@ -96,6 +97,7 @@ Partial Class Ver_AuditoriasEmpleadoG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(552, 261)
         Me.Controls.Add(Me.textBoxNroEmpleado)
         Me.Controls.Add(Me.labelNroEmpleado)

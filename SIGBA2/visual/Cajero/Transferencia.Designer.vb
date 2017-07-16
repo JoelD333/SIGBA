@@ -160,6 +160,7 @@ Partial Class Transferencia
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.buttonCancelar)
         Me.Controls.Add(Me.buttonAceptar)
@@ -176,6 +177,7 @@ Partial Class Transferencia
         Me.Controls.Add(Me.labelMonto)
         Me.Controls.Add(Me.labelTipo)
         Me.Name = "Transferencia"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Transferencia"
         Me.ResumeLayout(False)
         Me.PerformLayout()

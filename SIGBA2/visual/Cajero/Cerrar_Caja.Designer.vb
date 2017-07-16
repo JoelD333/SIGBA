@@ -76,6 +76,7 @@ Partial Class Cerrar_Caja
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.ButtonAceptar)
         Me.Controls.Add(Me.LabelSaldoEsperadoX)

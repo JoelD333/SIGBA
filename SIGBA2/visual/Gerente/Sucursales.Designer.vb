@@ -23,7 +23,6 @@ Partial Class Sucursales
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ButtonSalir = New System.Windows.Forms.Button()
         Me.ID = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nombre = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Calle = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -32,6 +31,7 @@ Partial Class Sucursales
         Me.Pais = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Departamento = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Esquina = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ButtonSalir = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,17 +42,8 @@ Partial Class Sucursales
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.DataGridView1.Location = New System.Drawing.Point(0, 42)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(542, 220)
+        Me.DataGridView1.Size = New System.Drawing.Size(843, 220)
         Me.DataGridView1.TabIndex = 0
-        '
-        'ButtonSalir
-        '
-        Me.ButtonSalir.Location = New System.Drawing.Point(13, 13)
-        Me.ButtonSalir.Name = "ButtonSalir"
-        Me.ButtonSalir.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonSalir.TabIndex = 1
-        Me.ButtonSalir.Text = "Salir"
-        Me.ButtonSalir.UseVisualStyleBackColor = True
         '
         'ID
         '
@@ -94,14 +85,25 @@ Partial Class Sucursales
         Me.Esquina.HeaderText = "Esquina"
         Me.Esquina.Name = "Esquina"
         '
+        'ButtonSalir
+        '
+        Me.ButtonSalir.Location = New System.Drawing.Point(13, 13)
+        Me.ButtonSalir.Name = "ButtonSalir"
+        Me.ButtonSalir.Size = New System.Drawing.Size(75, 23)
+        Me.ButtonSalir.TabIndex = 1
+        Me.ButtonSalir.Text = "Salir"
+        Me.ButtonSalir.UseVisualStyleBackColor = True
+        '
         'Sucursales
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(542, 262)
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
+        Me.ClientSize = New System.Drawing.Size(843, 262)
         Me.Controls.Add(Me.ButtonSalir)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Sucursales"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Sucursales"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

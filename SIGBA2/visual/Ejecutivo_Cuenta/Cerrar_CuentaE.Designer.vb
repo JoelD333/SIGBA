@@ -94,6 +94,7 @@ Partial Class Cerrar_CuentaE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGreen
         Me.ClientSize = New System.Drawing.Size(408, 261)
         Me.Controls.Add(Me.buttonCancelar)
         Me.Controls.Add(Me.buttonAceptar)
@@ -103,6 +104,7 @@ Partial Class Cerrar_CuentaE
         Me.Controls.Add(Me.comboBox1)
         Me.Controls.Add(Me.labelIdentificacion)
         Me.Name = "Cerrar_CuentaE"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Cerrar_Cuenta"
         Me.ResumeLayout(False)
         Me.PerformLayout()

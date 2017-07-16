@@ -96,6 +96,7 @@ Partial Class Crear_ClienteEmpresaG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.HotTrack
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.buttonAceptar)
         Me.Controls.Add(Me.buttonDireccion)
@@ -105,6 +106,7 @@ Partial Class Crear_ClienteEmpresaG
         Me.Controls.Add(Me.labelComprobanteIngresos)
         Me.Controls.Add(Me.labelRut)
         Me.Name = "Crear_ClienteEmpresaG"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Crear_ClienteEmpresaG"
         Me.ResumeLayout(False)
         Me.PerformLayout()

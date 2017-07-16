@@ -143,6 +143,7 @@ Partial Class Solicitud_ChequeraE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.LightGreen
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.buttonCancelar)
         Me.Controls.Add(Me.buttonImprimir)
@@ -157,6 +158,7 @@ Partial Class Solicitud_ChequeraE
         Me.Controls.Add(Me.labelDivisa)
         Me.Controls.Add(Me.labelSucursal)
         Me.Name = "Solicitud_ChequeraE"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Solicitud_Chequera"
         Me.ResumeLayout(False)
         Me.PerformLayout()

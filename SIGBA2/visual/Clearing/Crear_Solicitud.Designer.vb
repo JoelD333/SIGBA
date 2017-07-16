@@ -168,6 +168,7 @@ Partial Class Crear_Solicitud
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Yellow
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.buttonCancelar)
         Me.Controls.Add(Me.buttonAceptar)
@@ -185,6 +186,7 @@ Partial Class Crear_Solicitud
         Me.Controls.Add(Me.labelNroCheque)
         Me.Controls.Add(Me.labelSucursal)
         Me.Name = "Crear_Solicitud"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Crear_Solicitud"
         Me.ResumeLayout(False)
         Me.PerformLayout()

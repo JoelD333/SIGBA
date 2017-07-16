@@ -180,6 +180,7 @@ Partial Class DepositarCheque
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Coral
         Me.ClientSize = New System.Drawing.Size(359, 261)
         Me.Controls.Add(Me.labelNroCuenta)
         Me.Controls.Add(Me.textBox1)
